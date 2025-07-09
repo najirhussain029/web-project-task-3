@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f2f6;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.income-box, .expense-box {
+  width: 45%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.income-box {
+  background-color: #d4fcd4;
+}
+
+.expense-box {
+  background-color: #ffd6d6;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.radio {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul#history {
+  list-style: none;
+  padding: 0;
+}
+
+ul#history li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+ul#history li.income {
+  background-color: #d4fcd4;
+  border-left: 6px solid green;
+}
+
+ul#history li.expense {
+  background-color: #ffd6d6;
+  border-left: 6px solid red;
+}
+
+ul#history li span {
+  font-weight: bold;
+}
+
+ul#history li button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
